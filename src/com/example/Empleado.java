@@ -49,4 +49,16 @@ public class Empleado extends Usuario implements Autenticable {
     public void eliminarHorario(String tipo) {
         horarios.remove(tipo.toLowerCase());
     }
+
+    public Map<String, Map<String, String>> getHorarios() {
+        return horarios;
+    }
+
+    public void setHorarios(Map<String, Map<String, String>> horarios) {
+        this.horarios = horarios;
+    }
+
+    public void setInicioSesion(LocalDateTime inicioSesion) {
+        this.inicioSesion = inicioSesion;
+    }
 }

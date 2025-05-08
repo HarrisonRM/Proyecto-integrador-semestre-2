@@ -33,4 +33,5 @@ public class Administrador extends Usuario implements Autenticable {
 
     public void eliminarHorario(String empleado1, String entrada, Map<String, Empleado> empleados) {
     }
+
 }
